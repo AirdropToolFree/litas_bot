@@ -1,1 +1,44 @@
-# litas_bot
+# Litas Auto Claim and Start Mining
+
+![banner](image.png)
+## Features
+
+- **Auto Start/Claim Mining**
+- **Support multiple accounts**
+- **Support Proxy usage**
+
+## Prerequisites
+
+- Node.js installed on your machine
+- `tokens.txt` file containing token and refresh token follow instruction below to get:
+- Open litas dashboard [https://www.wallet.litas.io](https://wallet.litas.io/invite/manpu141288479303)
+- Login With your email
+- inspect or just F12, and find Application
+- in local storage find `token` and `refreshToken` and copy all both value.
+    ![token](image-1.png)
+
+## Installation
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/AirdropToolFree/litas_bot.git
+    cd litas_bot
+    ```
+
+2. Install the required dependencies:
+    ```sh
+    npm install
+    ```
+3. Input your tokens in `tokens.txt` file, one user per line format `token|refreshToken`
+    ```sh
+    nano tokens.txt
+    ```
+4. optionally you can use proxy: 
+- paste proxy in `proxy.txt` format `http://username:password@ip:port` 
+    ```sh
+    nano proxy.txt
+    ```
+5. Run the script:
+    ```sh
+    npm run start
+    ```
